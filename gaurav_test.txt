@@ -1,0 +1,71 @@
+1. Explain Operators in Python
+-> There are several operators used in python, which are Arithmetic, Logical, Relational, Assignment Operators.
+   a. Arithmetic Operator: It's used for a basic math operations.
+	                   eg: +, -, *, **, /, //, %
+   b. Logical Operator: It's used for combining bollean expressions.
+			   eg: and, or, not
+   c. Relational Operator: These operator are used for comparing values.
+			   eg: ==, !=, >, <, >=, <=
+   d. Assignment Operator: They are used to assign or update values.
+			   eg: =, +=, -=, etc.
+                     
+
+
+2. Explain use of break, continue & pass
+-> break: It exits the loop completely
+   continue: It skips to the next iteration of the loop
+   pass: It does nothing, like it's a placeholder 
+
+
+
+3. write syntax of while & for in loop in python
+-> # Syntax for while loop
+     i = 1
+     while i <= 5:
+	print(i)
+	i++
+   # Syntax for "for" loop
+     for i in range(1,6):
+	print(i)
+
+
+
+4. WAP to accept the number & check number is Armstrong number or not
+-> num = int(input("Enter a number"))
+   sum = 0 
+   
+   while i > 0:
+	digit = i % 10
+	sum += digit**3
+	i//=10
+  
+  if sum == num:
+	print("Armstrong Number")
+  else:
+	print("Not an Armstrong Number")
+	
+   
+
+5. WAP to accept the number & check number is palindrome or not 
+-> num = int(input("Enter a number: "))
+   reverse = int(str(num)[::-1])
+
+   if num == reverse:
+	print("The number is palindrome")
+   else:
+	print("Number isn't palindrome")
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

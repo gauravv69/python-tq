@@ -1,0 +1,84 @@
+Q1. Write key points about each collection in python (12 Marks)
+-> The following are the collections in Python:
+   List: They are mutable 
+	 ordered
+	 allows duplicates.	
+    	 eg: [1, 2, 3]
+   Tuple: They are immutable 
+	  ordered 
+	  allow duplicates.
+   	  eg: (1, 2, 3)
+   Set: Set's are mutable
+	They're unordered
+	They allow no duplicates 
+   	eg: {1, 2, 3}
+   Dictionary: Dictionary consists key-value pairs
+	       They are unordered 
+	       The keys are unique in dictionary
+               Eg: {"a:1", "b:2"}
+
+
+
+
+Q2. Write python code to create empty list, add 3 elements. remove element at index 1 (5 Marks)
+-> l1 = []
+   l1.append(10)
+   l1.append(20)
+   l1.append(30)
+   print(l1)
+   l1.pop(1)
+   print(l1)
+
+
+
+
+Q3. Write a code to accept the number & check number is Armstrong or not (5 Marks)
+-> num = int(input("Enter a number: "))
+   og = num
+   result = 0
+
+   while num > 0:
+	digit = num % 10
+	result += digit ** 3
+	num = num // 10
+
+ if result == og:
+	print(og,"is an Armstrong number")
+else:
+	print(og,"not an Armstrong number")
+
+
+
+
+Q4. Write a code to accept the string & print characters on odd index, do not print space ( 5 Marks)
+-> a = input("Enter a string")
+   
+   for i in range(len(s)):
+	if i % 2 != 0 and a[i] != ' ':
+		print(a[i], end = '')
+
+
+
+
+Q5. Write a code to accept a string from user & print count of vowel & consonants (3 Marks)
+-> a = input("Enter a string: ")
+   vowels = "aeiou"
+   v = 0
+   c = 0
+   
+   for ch in a:
+	if ch.isaplha():
+		if ch in vowels:
+			v += 1
+		else:
+			c += 1
+
+print("Vowels:", v)
+print("Constants:", c)
+
+
+
+
+
+
+
