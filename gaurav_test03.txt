@@ -1,0 +1,135 @@
+
+Q1.
+Explain the concept of a class in Python. What is the purpose of the __init__ method? Give a simple example to support your explanation.
+--> In Python, a class is a blueprint for creating objects. It helps to group data and functions into one unit. We can create multiple objects using the same class.
+    
+    The __init__ method is a special method used to initialize the attributes of a class when an object is created. It acts like a constructor.
+    
+    Example:
+            class Student:
+		def __init__(self, name, no):
+			self.name = name
+			self.no = no
+
+		def display(self):
+			print("Name", self.name)
+			print("Roll No.:", self.no)
+
+            s1 = Student("Gaurav", 33)
+	    s1.display()
+
+
+
+
+
+Q2.
+What is exception handling in Python? Explain with an example how try, except, and finally blocks work together.
+--> Exception handling in Python is used to handle errors that may occur during the execution of a program. It helps programs from being crashing.
+    
+    The try block contains the code that might throw an error.
+    The except block handles the error if it occurs.
+    The finally block is always executed, whether there is an error or not
+    
+    Example:
+            try:
+            	a = int(input("Enter first number: "))
+            	b = int(input("Enter second number: "))
+            	result = a / b
+            	print("Result:",result)
+            except ZeroDivisionError as ex:
+		print("Division by zero is not allowed")
+            except ValueError as ex:
+                print("Invalid Input, Please enter numbers only")
+            finally:
+		print("This is the finally block")
+
+
+
+
+
+Q3.
+What is list comprehension in Python? How is it different from a traditional for loop? Write a simple example of both methods for creating a list of squares from 1 to 5.
+--> List comprehension is a shorter and cleaner way to create lists in Python.
+    It is different from a traditional loop because it requires fewer lines of code and can be read easily.
+    
+    Using for Loop:
+	           squares = []
+		   for i in range(1,6):
+			squares.append(i*i)
+		   print(squares)
+ 
+   Using List Comprehension:
+			    squares = [i*i for i in range (1,6)]
+			    print(squares)
+
+
+
+
+
+Q4.
+Write a Python class called Rectangle that has two attributes: length and width. Include a method area() that returns the area of the rectangle. Create an object of this class and print the area.
+--> class Rectangle:
+	def __init__(self, length, width):
+		self.length = length
+		self.width = width
+
+	def area(self):
+		return self.length * self.width
+
+     r1 = Rectangle(6, 8)
+     print("Area of rectangle:", r1.area())
+
+
+
+
+
+Q5.
+Write a Python program that:
+
+Takes a list of numbers [10, 20, 'a', 30, 'b']
+
+Uses list comprehension to create a new list with squares of only the valid (integer) numbers
+
+Use exception handling to ignore invalid entries (non-integers)
+
+--> no = [10, 20, 'a', 30, 'b']
+    squares = []
+    
+    for i in no:
+	try:
+	  squares.append(i*i)
+	except TypeError:
+	  pass
+
+    print("Squares:", squares)
+    
+    Using List Comprehension:
+                             no = [10, 20, 'a', 30, 'b']
+			     squares = [i*i for i in no if ]
+			     print("Squares:", squares)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
